@@ -17,6 +17,7 @@
         android:background="@color/gray"
         android:gravity="right|center"
         android:textSize="40pt"
+        android:layout_marginBottom="1pt"
         android:inputType="textPersonName"
         android:text="0" />
 
@@ -25,20 +26,21 @@
         android:layout_height="wrap_content">
 
         <TableRow
+            android:layout_marginBottom="1pt"
             android:layout_width="match_parent"
             android:layout_height="match_parent" >
+
             <Button
                 android:id="@+id/butAC"
-                android:text="AC"
-                android:textColor="@color/organe"
-                android:layout_marginRight="1pt"
-                android:layout_height="30pt"
                 android:layout_width="30pt"
+                android:layout_height="match_parent"
+                android:layout_marginRight="1pt"
                 android:layout_weight="1"
                 android:background="@color/white"
-                ></Button>
+                android:text="AC"
+                android:textColor="@color/organe"></Button>
             <Button
-                android:id="@+id/butC"
+                android:id="@+id/butX"
                 android:text="C"
                 android:textColor="@color/organe"
                 android:layout_marginRight="1pt"
@@ -58,22 +60,24 @@
                 android:background="@color/white"
                 ></Button>
             <Button
-                android:id="@+id/butplus"
-                android:text="+"
+                android:id="@+id/butdiv"
+                android:text="/"
                 android:textColor="@color/organe"
                 android:layout_marginRight="1pt"
                 android:layout_height="30pt"
                 android:layout_width="30pt"
                 android:layout_weight="1"
-                    android:background="@color/white"
+                android:background="@color/white"
                 ></Button>
         </TableRow>
         <TableRow
+            android:layout_marginBottom="1pt"
             android:layout_width="match_parent"
             android:layout_height="match_parent" >
             <Button
                 android:id="@+id/but7"
                 android:text="7"
+                android:onClick="numberEvent"
                 android:textColor="@color/black"
                 android:layout_marginRight="1pt"
                 android:layout_height="30pt"
@@ -102,8 +106,8 @@
                 android:background="@color/white"
                 ></Button>
             <Button
-                android:id="@+id/butminus"
-                android:text="-"
+                android:id="@+id/butmul"
+                android:text="x"
                 android:textColor="@color/organe"
                 android:layout_marginRight="1pt"
                 android:layout_height="30pt"
@@ -113,6 +117,7 @@
                 ></Button>
         </TableRow>
         <TableRow
+            android:layout_marginBottom="1pt"
             android:layout_width="match_parent"
             android:layout_height="match_parent" >
             <Button
@@ -146,8 +151,8 @@
                 android:background="@color/white"
                 ></Button>
             <Button
-                android:id="@+id/butmul"
-                android:text="x"
+                android:id="@+id/butdec"
+                android:text="-"
                 android:textColor="@color/organe"
                 android:layout_marginRight="1pt"
                 android:layout_height="30pt"
@@ -157,6 +162,7 @@
                 ></Button>
         </TableRow>
         <TableRow
+            android:layout_marginBottom="1pt"
             android:layout_width="match_parent"
             android:layout_height="match_parent" >
             <Button
@@ -190,8 +196,8 @@
                 android:background="@color/white"
                 ></Button>
             <Button
-                android:id="@+id/butsub"
-                android:text="/"
+                android:id="@+id/butadd"
+                android:text="+"
                 android:textColor="@color/organe"
                 android:layout_marginRight="1pt"
                 android:layout_height="30pt"
@@ -200,6 +206,11 @@
                 android:background="@color/white"
                 ></Button>
         </TableRow>
+    </TableLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="match_parent" >
@@ -224,15 +235,16 @@
                 android:background="@color/white"
                 ></Button>
             <Button
-                android:id="@+id/butequals"
+                android:id="@+id/butequal"
                 android:text="="
                 android:textColor="@color/organe"
                 android:layout_marginRight="1pt"
                 android:layout_height="30pt"
-                android:layout_width="60pt"
+                android:layout_width="30pt"
                 android:layout_weight="1"
                 android:background="@color/white"
                 ></Button>
         </TableRow>
-    </TableLayout>
+    </LinearLayout>
+</LinearLayout>
 </LinearLayout>
