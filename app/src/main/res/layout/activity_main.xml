@@ -88,6 +88,7 @@
             <Button
                 android:id="@+id/but8"
                 android:text="8"
+                android:onClick="numberEvent"
                 android:textColor="@color/black"
                 android:layout_marginRight="1pt"
                 android:layout_height="30pt"
@@ -98,6 +99,7 @@
             <Button
                 android:id="@+id/but9"
                 android:text="9"
+                android:onClick="numberEvent"
                 android:textColor="@color/black"
                 android:layout_marginRight="1pt"
                 android:layout_height="30pt"
@@ -123,6 +125,7 @@
             <Button
                 android:id="@+id/but4"
                 android:text="4"
+                android:onClick="numberEvent"
                 android:textColor="@color/black"
                 android:layout_marginRight="1pt"
                 android:layout_height="30pt"
@@ -133,6 +136,7 @@
             <Button
                 android:id="@+id/but5"
                 android:text="5"
+                android:onClick="numberEvent"
                 android:textColor="@color/black"
                 android:layout_marginRight="1pt"
                 android:layout_height="30pt"
@@ -143,6 +147,7 @@
             <Button
                 android:id="@+id/but6"
                 android:text="6"
+                android:onClick="numberEvent"
                 android:textColor="@color/black"
                 android:layout_marginRight="1pt"
                 android:layout_height="30pt"
@@ -168,6 +173,7 @@
             <Button
                 android:id="@+id/but1"
                 android:text="1"
+                android:onClick="numberEvent"
                 android:textColor="@color/black"
                 android:layout_marginRight="1pt"
                 android:layout_height="30pt"
@@ -178,6 +184,7 @@
             <Button
                 android:id="@+id/but2"
                 android:text="2"
+                android:onClick="numberEvent"
                 android:textColor="@color/black"
                 android:layout_marginRight="1pt"
                 android:layout_height="30pt"
@@ -188,6 +195,7 @@
             <Button
                 android:id="@+id/but3"
                 android:text="3"
+                android:onClick="numberEvent"
                 android:textColor="@color/black"
                 android:layout_marginRight="1pt"
                 android:layout_height="30pt"
@@ -217,6 +225,7 @@
             <Button
                 android:id="@+id/but0"
                 android:text="0"
+                android:onClick="numberEvent"
                 android:textColor="@color/black"
                 android:layout_marginRight="1pt"
                 android:layout_height="30pt"
@@ -227,6 +236,7 @@
             <Button
                 android:id="@+id/butdot"
                 android:text="."
+                android:onClick="numberEvent"
                 android:textColor="@color/black"
                 android:layout_marginRight="1pt"
                 android:layout_height="30pt"
@@ -246,5 +256,4 @@
                 ></Button>
         </TableRow>
     </LinearLayout>
-</LinearLayout>
 </LinearLayout>
